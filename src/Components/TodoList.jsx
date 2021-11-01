@@ -17,8 +17,13 @@ setItems((oldItems)=>{
 setInputList('');
     };
 
-    const deleteItems=()=>{
-        
+    const deleteItems=(id)=>{
+        setItems((oldItems)=>{
+            return oldItems.filter((arrElem,index)=>{
+                return index !== id;
+            })
+        })
+       
     }
     return(
         <>
@@ -32,14 +37,11 @@ setInputList('');
   
                 <ol>
                    
-                    {Items.map((val)=>{
+                    {Items.map((val,index)=>{
                         return (
                             <>
-                            
-                            <div className="todo">
-                                <i className="fa fa-times" aria-hidden="true" onClick={deleteItems}></i>
-                            <li>{val}</li>
-                            </div>
+                           <ToDoLists key={index} id={index} text={val} onSelect={deleteItems}/> 
+                           
                             </>
                         )
                     })}
@@ -50,4 +52,20 @@ setInputList('');
     )
 }
 
+
+const ToDoLists=(props)=>{
+    return(
+        <>
+         <div className="todo">
+                                <i className="fa fa-times" aria-hidden="true" onClick={
+                                    ()=>{
+                                        props.onSelect(props.id);
+                                    }
+                                }></i>
+                            <li>{props.text}</li>
+                            </div>
+        </>
+    )
+}
 export default List;
+export {ToDoLists};

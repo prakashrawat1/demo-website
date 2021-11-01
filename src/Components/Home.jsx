@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Image1 from "../Images/smoke.jpg"
+// import Image1 from "../Images/smoke.jpg"
 const Home=()=>{
     return(
         <>
@@ -18,7 +18,7 @@ const Home=()=>{
     </div>
 </div>
 
-<div className=" pic col-md-6 order-1 order-lg-2"><img src={Image1} alt="" /></div>
+{/* <div className=" pic col-md-6 order-1 order-lg-2"><img src={Image1} alt="" /></div> */}
 </div>
 
                     </div>
