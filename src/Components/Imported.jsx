@@ -12,6 +12,7 @@ const Imported =()=>{
 
     return(
         <>
+        
         <Nav/>
         <Switch>
 <Route exact path="/" component={Home}/>
