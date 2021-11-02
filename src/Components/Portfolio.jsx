@@ -23,7 +23,7 @@ return(
     <>
     <div className="search_bar">
     <input type="text" placeholder="search anything" 
-    value={img}
+    // value={img}
     onChange={inputEvent}/>
     {img === ""? null : <Sresult name={img}/> }
     
