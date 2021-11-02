@@ -8,6 +8,7 @@ import  Nav from './Nav';
 import Footer from "./Footer";
 import { MovieShow } from "./Movie";
 import List from './TodoList';
+import { Portfolio } from "./Portfolio";
 const Imported =()=>{
 
     return(
@@ -20,6 +21,7 @@ const Imported =()=>{
 <Route exact path="/movies" component={MovieShow}/>
 <Route exact path="/gallery" component={Gallery}/>
 <Route exact path="/list" component={List}/>
+<Route exact path="/portfolio" component={Portfolio}/>
 <Redirect to='/' />
             </Switch>
        <Footer/>

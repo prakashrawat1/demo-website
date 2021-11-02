@@ -181,3 +181,21 @@ box-shadow:5px 5px 15px -5px rgba(0,0,0,0.3);}
 
 .todo .fa-times:hover{color:red;
 background-color: white;}
+
+/* PORTFOLIO STYLING */
+
+
+.search_bar{text-align: center;
+  margin-top: 67px;
+height: 100vh;}
+
+  .search_bar input{    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+    font-weight: 600;}
+
+    .search_img img{height: 400px;
+      margin-top: 80px;}
+
+
+

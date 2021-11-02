@@ -32,6 +32,9 @@ const Nav=()=>{
         <li className="nav-item">
           <NavLink activeClassName="menu_active" className="nav-link" to="/list">Keep Notes</NavLink>
         </li>
+        <li className="nav-item">
+          <NavLink activeClassName="menu_active" className="nav-link" to="/portfolio">Portfolio</NavLink>
+        </li>
         
         
       </ul>
